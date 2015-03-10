@@ -5,7 +5,7 @@
  *  \date       March 10, 2015
  *
  *  \copyright  Copyright 2015, Dan Fekete <thefekete@gmail.com>
- *              LICENSE
+ *              Released under the GNU GPL version 3
  *
  *  CharRing is a simple character ring/circular buffer designed for
  *  microcontrollers.
