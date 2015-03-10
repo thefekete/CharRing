@@ -1,0 +1,4 @@
+html
+tests/tests
+tests/*.o
+*.o

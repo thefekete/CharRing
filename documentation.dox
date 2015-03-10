@@ -1,0 +1,45 @@
+/*! \file *********************************************************************
+ *
+ *  \mainpage
+ *
+ *  CharRing is a simple character ring/circular buffer designed for
+ *  microcontrollers.
+ *
+ *  This was designed with microcontrollers in mind, but it might be useful for
+ *  other purposes as well.
+ *
+ *  \par Basic Usage
+ *  \code
+ *  #include <stdio.h>
+ *  #include "charring.h"  // include the header
+ *
+ *  int main()
+ *  {
+ *      // Create a buffer (64 chars here)
+ *      CharRingBuf *my_buf = CharRing_new(64);
+ *
+ *      // Add some chars to it
+ *      CharRing_putchar(my_buf, 'A');
+ *      CharRing_putchar(my_buf, 'B');
+ *      CharRing_putchar(my_buf, 'C');
+ *
+ *      // Read them back
+ *      while (CharRing_available(my_buf)) {
+ *          putchar(CharRing_getchar(my_buf));
+ *      }
+ *      putchar('\n');
+ *
+ *      // Don't forget this!
+ *      CharRing_free(my_buf);
+ *  }
+ *  \endcode
+ *
+ *  \author     Dan Fekete <thefekete@gmail.com>
+ *  \date       March 10, 2015
+ *
+ *  \copyright  Copyright 2015, Dan Fekete <thefekete@gmail.com>
+ *              LICENSE
+ *
+ *
+ *
+ *****************************************************************************/
