@@ -9,9 +9,12 @@ This was designed with microcontrollers in mind, but it might be useful for othe
 ## Installation
 The fastest way to get started is to run this in your project directory:
 ```sh
-wget https://raw.githubusercontent.com/thefekete/CharRing/v1.0/charring.c \
-https://raw.githubusercontent.com/thefekete/CharRing/v1.0/charring.h
+VERSION=v1.0
+wget https://raw.githubusercontent.com/thefekete/CharRing/$VERSION/charring.c \
+https://raw.githubusercontent.com/thefekete/CharRing/$VERSION/charring.h
 ```
+You can replace v1.0 with master to get the latest.. but it may not be stable yet!
+
 Then just include the charring.h file in your project and add charring.o to the objects in your makefile.
 
 ## Basic Usage
