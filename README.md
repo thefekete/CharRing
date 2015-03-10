@@ -1,10 +1,18 @@
 # CharRing
 
-Documentation can be found [here](http://thefekete.github.io/CharRing/).
+Doxygen documentation can be found [here](http://thefekete.github.io/CharRing/).
 
 CharRing is a simple character ring/circular buffer designed for microcontrollers.
 
 This was designed with microcontrollers in mind, but it might be useful for other purposes as well.
+
+## Installation
+The fastest way to get started is to run this in your project directory:
+```sh
+wget https://raw.githubusercontent.com/thefekete/CharRing/v1.0/charring.c \
+https://raw.githubusercontent.com/thefekete/CharRing/v1.0/charring.h
+```
+Then just include the charring.h file in your project and add charring.o to the objects in your makefile.
 
 ## Basic Usage
 ```c
